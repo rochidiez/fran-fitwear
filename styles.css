@@ -61,7 +61,7 @@ video {
 }
 
 
-.container-wod{
+.container-wod {
   background-color: rgba(0, 0, 0, 0.4);
   margin: 10px 0;
   color: white;
@@ -76,7 +76,7 @@ video {
   color:#ffffff8a;
 }
 
-.btn-create{
+.btn-create {
   padding:10px 20px;
   font-size: 20px;
   text-transform: uppercase;
@@ -90,6 +90,7 @@ video {
   float: none;
   margin-top: 30px;
   cursor: pointer;
+  letter-spacing: 1.5px;
 }
 
 
@@ -122,10 +123,38 @@ video {
 }
 
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1284px) {
   .viewport-header {
       width: 80% !important;
   }
 
+.container .action, 
+.store a,
+.footer a   {
+  font-size: 16px;
+  }
+.logo img {
+  width: 35%;
 }
+
+.container h1 {
+  font-size: 22px;
+}
+
+.container h2 {
+  font-size: 20px;
+}
+.container-wod {
+  min-height: 60%;
+  font-size: 30px;
+}
+.btn-create {
+  width: 60%;
+  font-size: 20px;
+}
+
+}
+
+
+1170
 
