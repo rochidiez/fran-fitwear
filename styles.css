@@ -42,7 +42,7 @@ video {
   margin: 0px auto;
 }
 .logo img {
-  margin-top: 60px;
+  margin: 60px 0 20px 0;
 }
 
 .container h1 {
@@ -71,7 +71,7 @@ video {
 }
 
 .container .action {
-  font-size: 12px;
+  font-size: 14px;
   font-style: italic;
   color:#ffffff8a;
 }
