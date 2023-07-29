@@ -21,7 +21,7 @@ video {
 .store {
   position: absolute;
   z-index: 1;
-  border: 1px solid white;
+  border: 1px solid #ffffff8f;
   right: 2%;
   top: 2%;
   border-radius: 5px;
@@ -33,7 +33,7 @@ video {
 
 .store  a {
   text-decoration: none;
-  color: white;
+  color: #ffffff8f;
   float: right;
   line-height: 28px;
   padding-left: 4px;
@@ -41,6 +41,7 @@ video {
 
 .store  img {
   width: 24px;
+  opacity: .8;
 }
 
 .viewport-header {
@@ -59,6 +60,9 @@ video {
  margin: 20px 0 0 0;
  font-weight: 600;
  text-transform: uppercase;
+ width: 100%;
+ background-color: #ffffff1c;
+ border-radius: 5px;
 
 }
 
@@ -74,16 +78,18 @@ video {
   background-color: rgba(0, 0, 0, 0.4);
   margin: 10px 0;
   color: white;
-  padding: 20px 10px;
+  padding: 10px;
   text-align: center;
   min-height: 200px;
   font-size: 25px;
   line-height: 35px;
   font-weight: 300;
+  border-radius: 5px;
+
 }
 
 .container .action {
-  font-size: 14px;
+  font-size: 12px;
   font-style: italic;
   color:#ffffff8a;
 }
@@ -95,11 +101,12 @@ video {
   color: white;
   background-image: linear-gradient(#4B50B9, #A1A4F8);
   background: linear-gradient(236deg, #4B50B9 0%, #A1A4F8 100%);
-  border-radius: 10px;
+  border-radius: 5px;
   border: 0px;
   font-weight: 900;
   float: none;
   margin-top: 30px;
+  margin-bottom: 10px;
   cursor: pointer;
   letter-spacing: 1.5px;
   font-family: 'Montserrat';
@@ -107,29 +114,21 @@ video {
 
 
 .footer {
-  position: fixed;
-  bottom: 0;
   z-index: 1;
-  background: rgba(0, 0, 0, 0.7);
   width: 100%;
-  padding: 20px;
-  flex-shrink: 0;
-}
-
-
-.footer {
+  position: relative;
     text-align: center;
-    width: 100%;
+
 }
-.footer img {float: left;}
+
 .footer a {
-  color: #F5F5F5;
   font-size: 14px;
+  color:#ffffff8a;
   font-style: normal;
   font-weight: 500;
-  padding: 10px 5px;
   line-height: 2;
   text-decoration: none;
+  line-height: 12px;
 
 }
 /* Estilos para dispositivos móviles */
@@ -153,7 +152,6 @@ video {
 
   .container-wod {
     font-size: 18px; 
-    padding: 10px 0px;
   }
 
   .btn-create {
@@ -162,6 +160,12 @@ video {
     padding: 20px 0;
   }
   .store {
-    font-size: 14px;
+    font-size: 12px;
+  }
+  .store a {
+      line-height: 18px;
+  }
+  .store  img {
+    width: 16px;
   }
 }
