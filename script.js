@@ -74,7 +74,7 @@ var lastShownOption = null;
 // Function to set a workout with the specified text
 function setWorkout(option) {
   var workoutHTML = "<p>";
-  workoutHTML += "<strong style=\"font-size: 28px;\">" + option.text[0] + "</strong><br>";
+  workoutHTML += "<strong>" + option.text[0] + "</strong><br>";
   workoutHTML += option.text.slice(1).join("<br>");
   workoutHTML += "</p>";
   opcionAleatoria.innerHTML = workoutHTML;
