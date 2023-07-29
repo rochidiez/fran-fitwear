@@ -17,6 +17,7 @@ video {
   left: 0;
 }
 
+video.video-mobile {display: none;}
 
 .store {
   position: absolute;
@@ -136,6 +137,13 @@ video {
 }
 /* Estilos para dispositivos móviles */
 @media screen and (max-width: 767px) {
+  video.video-desktop {
+    display: none;
+  }
+  video.video-mobile {
+    display: block;
+  } 
+  
   .logo img {
       margin: 20% 0 20px 0;
   }
