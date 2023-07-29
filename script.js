@@ -13,7 +13,7 @@ var opciones = [
     text: ["For time 21-15-9-15-9","Squat Broad Jump", "Sit ups", "Push Ups"],
   },
   {
-    text: ["For time", "Buy-In: 1", ",000 meter Run", "Directly into AMRAP in 22 minutes of:", "23 Air Squats", "7 Burpees", "14 Push-Ups", "Cash-Out: 1,000 meter Run"],
+    text: ["For time", "Buy-In: 1000 meter Run", "Directly into AMRAP in 22 minutes of:", "23 Air Squats", "7 Burpees", "14 Push-Ups", "Cash-Out: 1,000 meter Run"],
   },
   {
     text: ["4 Tabatas", "1) Shuttle Runs", "2) Squats", "3) Burpees", "4) DU / SU"],
@@ -43,7 +43,7 @@ var opciones = [
     text: [ "7 Rounds for Time", "200 meter Sprint", "50 meter Bear Crawl", "15 Burpees", "Rest 2 minutes between rounds"],
   },
    {
-    text: [ "AMRAP in 2", "0 minutes", "20 Air Squats", "20 Sit-Ups", "10/7 Handstand Push-Ups"],
+    text: [ "AMRAP in 20 minutes", "20 Air Squats", "20 Sit-Ups", "10/7 Handstand Push-Ups"],
   },
    {
     text: [ "For Time", "Buy-In: 3,500 meter Run", "Then, 21 Rounds of:","5 Burpees", "10 Push-Ups", "15 Air Squats","Cash-Out: 3,500 meter Run"],
@@ -74,7 +74,7 @@ var lastShownOption = null;
 // Function to set a workout with the specified text
 function setWorkout(option) {
   var workoutHTML = "<p>";
-  workoutHTML += "<strong>" + option.text[0] + "</strong><br>";
+  workoutHTML += "<strong style=\"text-transform: uppercase; margin-bottom: 20px; text-decoration: underline\">" + option.text[0] + "</strong><br>";
   workoutHTML += option.text.slice(1).join("<br>");
   workoutHTML += "</p>";
   opcionAleatoria.innerHTML = workoutHTML;

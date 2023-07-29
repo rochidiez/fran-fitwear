@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Montserrat&family=Oswald:wght@400;600&family=Space+Mono&display=swap');  
-
+  @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;600;900&display=swap');
 body {
   margin: 0;
   color: white;
@@ -19,24 +18,35 @@ video {
 }
 
 
-.store a {
-  color: white;
-  text-decoration: none;
+.store {
   position: absolute;
   z-index: 1;
   border: 1px solid white;
   right: 2%;
   top: 2%;
-  border-radius: 10px;
-  padding: 0.5% 1%;
+  border-radius: 5px;
+  padding: 5px 10px;
   font-size: 16px
 
+}
+
+
+.store  a {
+  text-decoration: none;
+  color: white;
+  float: right;
+  line-height: 28px;
+  padding-left: 4px;
+}
+
+.store  img {
+  width: 24px;
 }
 
 .viewport-header {
   position: relative;
   text-align: center;
-  z-index: 1;
+  z-index: 3;
   width: 50%;
   margin: 0px auto;
 }
@@ -44,18 +54,18 @@ video {
   margin: 60px 0 20px 0;
 }
 
+
 .container h1 {
  margin: 20px 0 0 0;
- font-weight: bold;
+ font-weight: 600;
  text-transform: uppercase;
- font-family: 'Montserrat';
 
 }
 
 .container h2 {
  margin: 0px 0 0 0;
  font-size: 16px;
- font-family: 'Montserrat';
+  font-weight: 600;
 
 }
 
@@ -67,7 +77,9 @@ video {
   padding: 20px 10px;
   text-align: center;
   min-height: 200px;
-  font-size: 30px;
+  font-size: 25px;
+  line-height: 35px;
+  font-weight: 300;
 }
 
 .container .action {
@@ -85,19 +97,19 @@ video {
   background: linear-gradient(236deg, #4B50B9 0%, #A1A4F8 100%);
   border-radius: 10px;
   border: 0px;
-  font-family: 'oswald';
-  font-weight: 600;
+  font-weight: 900;
   float: none;
   margin-top: 30px;
   cursor: pointer;
   letter-spacing: 1.5px;
+  font-family: 'Montserrat';
 }
 
 
 .footer {
   position: fixed;
   bottom: 0;
-  z-index: 2;
+  z-index: 1;
   background: rgba(0, 0, 0, 0.7);
   width: 100%;
   padding: 20px;
@@ -112,7 +124,6 @@ video {
 .footer img {float: left;}
 .footer a {
   color: #F5F5F5;
-  font-family: Montserrat;
   font-size: 14px;
   font-style: normal;
   font-weight: 500;
@@ -123,23 +134,34 @@ video {
 }
 /* Estilos para dispositivos móviles */
 @media screen and (max-width: 767px) {
+  .logo img {
+      margin: 20% 0 20px 0;
+  }
+  
   .viewport-header {
-    width: 90%; /* Reducimos el ancho del encabezado para que se ajuste en pantallas pequeñas */
+    width: 90%; 
   }
 
   .container h1 {
-    font-size: 24px; /* Ajustamos el tamaño del título en pantallas pequeñas */
+    font-size: 24px; 
+    margin-top: 0;
   }
 
   .container h2 {
-    font-size: 14px; /* Ajustamos el tamaño del subtítulo en pantallas pequeñas */
+    font-size: 14px; 
   }
 
   .container-wod {
-    font-size: 18px; /* Ajustamos el tamaño del contenido principal en pantallas pequeñas */
+    font-size: 18px; 
+    padding: 10px 0px;
   }
 
   .btn-create {
-    font-size: 18px; /* Ajustamos el tamaño del botón en pantallas pequeñas */
+    font-size: 18px; 
+    width: 100%;
+    padding: 20px 0;
+  }
+  .store {
+    font-size: 14px;
   }
 }
